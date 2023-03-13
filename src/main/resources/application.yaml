@@ -1,5 +1,10 @@
 zeebe:
   client:
+    id: ${ZEEBE-CLIENT-ID}
+    secret: ${ZEEBE-CLIENT-SECRET}
+    authorizationServerUrl: ${ZEEBE-CLIENT-AUTHORIZATION-SERVER-URL}
+    audience: ${ZEEBE-CLIENT-AUDIENCE}
+    
     broker.gatewayAddress: 127.0.0.1:26500
     security.plaintext: true
 
@@ -56,6 +61,6 @@ management:
 white-label:
   logo.path: img/logo.png
   custom:
-    title: Zeebe Simple Monitor
+    title: OpenFlow Cockpit
     css.path: css/custom.css
     js.path: js/custom.js
